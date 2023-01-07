@@ -56,7 +56,7 @@ class App extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 40,
                 ),
                 Text(
                   'Total balance',
@@ -95,7 +95,7 @@ class App extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 100,
+                  height: 70,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -127,26 +127,23 @@ class App extends StatelessWidget {
                   amount: '6 428',
                   icon: Icons.euro_rounded,
                   isInverted: false,
+                  offset: 0,
                 ),
-                Transform.translate(
-                  offset: const Offset(0, -20),
-                  child: const CurrencyCard(
-                    name: 'BitCoin',
-                    code: 'BTC',
-                    amount: '7 428',
-                    icon: Icons.currency_bitcoin_rounded,
-                    isInverted: true,
-                  ),
+                const CurrencyCard(
+                  name: 'BitCoin',
+                  code: 'BTC',
+                  amount: '7 428',
+                  icon: Icons.currency_bitcoin_rounded,
+                  isInverted: true,
+                  offset: 1,
                 ),
-                Transform.translate(
-                  offset: const Offset(0, -40),
-                  child: const CurrencyCard(
-                    name: 'Dollar',
-                    code: 'USD',
-                    amount: '428',
-                    icon: Icons.attach_money_rounded,
-                    isInverted: false,
-                  ),
+                const CurrencyCard(
+                  name: 'Dollar',
+                  code: 'USD',
+                  amount: '428',
+                  icon: Icons.attach_money_rounded,
+                  isInverted: false,
+                  offset: 2,
                 ),
               ],
             ),
