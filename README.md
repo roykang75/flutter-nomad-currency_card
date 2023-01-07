@@ -1,4 +1,4 @@
-# toonflex
+# Currency Card App
 
 A new Flutter project.
 
